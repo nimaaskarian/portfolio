@@ -7,7 +7,8 @@ export const defaultDark = {
   
 export const defaultLight = {
   primary: "black",
-  bg: "white",
+  bg: "#e5e5e5",
+  bgSecondary: "#eee",
   secondary:"#c70039" 
 };
   

@@ -24,6 +24,7 @@ export const TypewriterWrapper = styled.h3`
   & > * {
     display: inline-block;
   }
+  margin-top: 20px;
 `;
 
 export const SocialMediaLink = styled.a`

@@ -5,6 +5,7 @@ import { ReactComponent as Facebook } from "assets/svg/facebook.svg";
 import { ReactComponent as Instagram } from "assets/svg/instagram.svg";
 import { ReactComponent as LinkedIn } from "assets/svg/linkedin.svg";
 import { ReactComponent as Twitter } from "assets/svg/twitter.svg";
+import { ReactComponent as Github } from "assets/svg/github.svg";
 import {
   Header,
   SocialMediaLink,
@@ -42,14 +43,17 @@ const Home = (Home) => {
         </TypewriterWrapper>
       </div>
       <SocialMediaLinks>
-        <SocialMediaLink href="https://facebook.com">
-          <Facebook />
+        <SocialMediaLink href="https://github.com">
+          <Github />
         </SocialMediaLink>
         <SocialMediaLink href="https://instagram.com">
           <Instagram />
         </SocialMediaLink>
         <SocialMediaLink href="https://linkedin.com">
           <LinkedIn />
+        </SocialMediaLink>
+        <SocialMediaLink href="https://facebook.com">
+          <Facebook />
         </SocialMediaLink>
         <SocialMediaLink href="https://twitter.com">
           <Twitter />

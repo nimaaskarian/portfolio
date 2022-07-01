@@ -4,15 +4,21 @@ import HamburgerButton from "./components/HamburgerIcon";
 import Home from "./Home";
 import { ThemeProvider } from "styled-components";
 import { defaultLight } from "themes";
+import Menu from "./components/Menu";
+import { Route, Routes } from "react-router-dom";
 
 const Layout = () => {
-  const [isMenuActive, setIsMenuActive] = useState(false);
+  const [isMenuActive, setIsMenuActive] = useState(null);
+  const toggleMenuActive = () => setIsMenuActive(!isMenuActive);
   return (
     <>
       <ThemeProvider theme={defaultLight}>
         <GlobalStyle />
-        <HamburgerButton onClick={() => setIsMenuActive(!isMenuActive)} />
-        <Home />
+        <Menu active={isMenuActive} toggleActive={toggleMenuActive} />
+        <HamburgerButton onClick={toggleMenuActive} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </ThemeProvider>
     </>
   );
