@@ -2,16 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { StyledMenu } from "./style";
 
+const links = [
+  { label: "HOME", path: "/" },
+  { label: "BLOG", path: "/blog" },
+  { label: "ABOUT", path: "/about" },
+  { label: "PORTFOLIO", path: "/portfolio" },
+  { label: "CONTACT", path: "/contact" },
+];
+
 const Menu = ({ active, toggleActive }) => {
-  console.log(active)
+  console.log(active);
   return (
     <StyledMenu enabled={active}>
-      <Link to="/" onClick={toggleActive}data-text="HOME">
-        HOME
-      </Link>
-      <Link to="/blog" onClick={toggleActive} data-text="BLOG">
-        BLOG
-      </Link>
+      {links.map((link) => {
+        return (
+          <Link to={link.path} onClick={toggleActive} data-text={link.label}>
+            {link.label}
+          </Link>
+        );
+      })}
     </StyledMenu>
   );
 };

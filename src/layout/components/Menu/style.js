@@ -19,6 +19,7 @@ const disappearAnimation = keyframes`
 `;
 
 export const StyledMenu = styled.div`
+  overflow: hidden;
   padding: 60px;
   flex-direction: column;
   justify-content: center;
