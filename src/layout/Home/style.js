@@ -36,6 +36,7 @@ export const SocialMediaLink = styled.a`
   transition: all 0.4s ease;
   & > svg {
     width: 21px;
+    fill: ${(props)=>props.theme.primary}
   }
 `;
 

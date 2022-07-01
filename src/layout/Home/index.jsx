@@ -28,11 +28,11 @@ const Home = (Home) => {
               options={{
                 skipAddStyles: true,
                 strings: [
-                  "Developer",
-                  "Engineer",
-                  "Designer",
-                  "Programmer",
-                  "Freelancer",
+                  "Developer.",
+                  "Engineer.",
+                  "Designer.",
+                  "Programmer.",
+                  "Freelancer.",
                 ],
                 autoStart: true,
                 loop: true,

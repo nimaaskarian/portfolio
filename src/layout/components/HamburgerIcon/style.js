@@ -27,7 +27,7 @@ export const HamburgerLine = styled.span`
   &::before {
     transition: all 0.5s ease;
     content: "";
-    background-color: black;
+    background-color: ${(props)=>props.theme.primary};
     position: absolute;
     height: 100%;
     width: ${({ initialWidth }) => initialWidth || "100%"};

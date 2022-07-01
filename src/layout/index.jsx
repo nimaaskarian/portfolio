@@ -1,14 +1,19 @@
-import React from "react";
-import GlobalStyle from "../globalStyles";
+import React, { useState } from "react";
+import GlobalStyle from "globalStyles";
 import HamburgerButton from "./components/HamburgerIcon";
 import Home from "./Home";
+import { ThemeProvider } from "styled-components";
+import { defaultLight } from "themes";
 
 const Layout = () => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
   return (
     <>
-      <GlobalStyle />
-      <HamburgerButton/>
-      <Home />
+      <ThemeProvider theme={defaultLight}>
+        <GlobalStyle />
+        <HamburgerButton onClick={() => setIsMenuActive(!isMenuActive)} />
+        <Home />
+      </ThemeProvider>
     </>
   );
 };

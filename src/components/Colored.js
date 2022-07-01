@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
 export default styled.span`
-  color: #c70039;
+  &,
+  & * {
+    color: ${(props) => props.theme.secondary};
+  }
 `;

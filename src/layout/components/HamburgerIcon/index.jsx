@@ -1,12 +1,12 @@
 import React from "react";
 import { HamburgerLine, StyledHamburgerButton } from "./style";
 
-const HamburgerButton = () => {
+const HamburgerButton = ({ onClick }) => {
   return (
-    <StyledHamburgerButton>
-      <HamburgerLine initialWidth="60%"/>
-      <HamburgerLine initialWidth="80%"/>
-      <HamburgerLine initialWidth="100%"/>
+    <StyledHamburgerButton onClick={onClick}>
+      <HamburgerLine initialWidth="60%" />
+      <HamburgerLine initialWidth="80%" />
+      <HamburgerLine initialWidth="100%" />
     </StyledHamburgerButton>
   );
 };
