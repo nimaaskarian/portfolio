@@ -25,7 +25,7 @@ export const HamburgerLine = styled.span`
   background-color: transparent;
   display: block;
   &::before {
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     content: "";
     background-color: ${(props)=>props.theme.primary};
     position: absolute;

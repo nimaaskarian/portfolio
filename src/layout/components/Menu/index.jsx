@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { StyledMenu } from "./style";
+import { Link, useLocation } from "react-router-dom";
+import { StyledCloseButton, StyledMenu, StyledNavigationButton } from "./style";
 
 const links = [
   { label: "HOME", path: "/" },
@@ -12,13 +12,21 @@ const links = [
 
 const Menu = ({ active, toggleActive }) => {
   console.log(active);
+  const location = useLocation();
   return (
     <StyledMenu enabled={active}>
+      <StyledCloseButton onClick={toggleActive} />
       {links.map((link) => {
         return (
-          <Link to={link.path} onClick={toggleActive} data-text={link.label}>
+          <StyledNavigationButton
+            key={link.path}
+            to={link.path}
+            enabled={location.pathname === link.path}
+            onClick={toggleActive}
+            data-text={link.label}
+          >
             {link.label}
-          </Link>
+          </StyledNavigationButton>
         );
       })}
     </StyledMenu>

@@ -13,6 +13,7 @@ export const Header = styled.h1`
   font-size: 65px;
   margin: 0;
   font-weight: 700;
+  text-align: center;
 `;
 
 export const TypewriterWrapper = styled.h3`
@@ -28,7 +29,6 @@ export const TypewriterWrapper = styled.h3`
 `;
 
 export const SocialMediaLink = styled.a`
-  margin: 5px 0;
   opacity: 0.55;
   &:hover {
     opacity: 1;
@@ -37,7 +37,7 @@ export const SocialMediaLink = styled.a`
   transition: all 0.4s ease;
   & > svg {
     width: 21px;
-    fill: ${(props)=>props.theme.primary}
+    fill: ${(props) => props.theme.primary};
   }
 `;
 
@@ -49,4 +49,13 @@ export const SocialMediaLinks = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
+  @media only screen and (max-width: 1025px) {
+    & {
+      flex-direction: row;
+      bottom: 0;
+      height: initial;
+      width: 100vw;
+    }
+  }
 `;
