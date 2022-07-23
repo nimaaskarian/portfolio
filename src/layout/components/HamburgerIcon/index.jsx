@@ -4,9 +4,9 @@ import { HamburgerLine, StyledHamburgerButton } from "./style";
 const HamburgerButton = ({ onClick }) => {
   return (
     <StyledHamburgerButton onClick={onClick}>
+      <HamburgerLine initialWidth="100%" />
       <HamburgerLine initialWidth="60%" />
       <HamburgerLine initialWidth="80%" />
-      <HamburgerLine initialWidth="100%" />
     </StyledHamburgerButton>
   );
 };

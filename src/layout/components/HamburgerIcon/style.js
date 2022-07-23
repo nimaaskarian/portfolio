@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledHamburgerButton = styled.div`
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  z-index: 4;
   right: 60px;
   top: 60px;
   transition: all 0.5s ease;

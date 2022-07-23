@@ -25,11 +25,11 @@ export const StyledMenu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 5;
   background-color: ${(props) => props.theme.bgSecondary};
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: ${(props) => (props.enabled === null ? "none" : "flex")};
@@ -42,8 +42,8 @@ export const StyledMenu = styled.div`
 
 export const StyledCloseButton = styled.button`
   background: transparent;
-  top: 60px;
-  right: 60px;
+  top: 50px;
+  right: 50px;
   border: none;
   outline: none;
   width: 48px;
