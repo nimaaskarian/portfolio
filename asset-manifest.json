@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "./static/js/main.68420741.js",
+    "main.js": "./static/js/main.378cd3ce.js",
     "static/media/nitab-scrsht.png": "./static/media/nitab-scrsht.db383c4258c91ff927b1.png",
     "static/media/enigma-js-scrsht.png": "./static/media/enigma-js-scrsht.34e0f109229b880dded1.png",
     "static/media/github.svg": "./static/media/github.383bf8dce8d0b4fd450950e532f14cf4.svg",
@@ -10,9 +10,9 @@
     "static/media/linkedin.svg": "./static/media/linkedin.4453edb75aebf8d605ad318f54bbe370.svg",
     "index.html": "./index.html",
     "static/media/facebook.svg": "./static/media/facebook.545dc8f0419ef6036a41dc12e4c97299.svg",
-    "main.68420741.js.map": "./static/js/main.68420741.js.map"
+    "main.378cd3ce.js.map": "./static/js/main.378cd3ce.js.map"
   },
   "entrypoints": [
-    "static/js/main.68420741.js"
+    "static/js/main.378cd3ce.js"
   ]
 }
