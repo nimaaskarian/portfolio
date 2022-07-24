@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.js": "./static/js/main.30a2a343.js",
+    "main.js": "./static/js/main.587f703a.js",
     "static/media/nitab-scrsht.png": "./static/media/nitab-scrsht.db383c4258c91ff927b1.png",
     "static/media/enigma-js-scrsht.png": "./static/media/enigma-js-scrsht.34e0f109229b880dded1.png",
     "static/media/github.svg": "./static/media/github.383bf8dce8d0b4fd450950e532f14cf4.svg",
-    "static/media/instagram.svg": "./static/media/instagram.cb9183495c3f80ca6290a311008ba0d6.svg",
-    "static/media/twitter.svg": "./static/media/twitter.e43ac9be18263afdc228bb1256c89015.svg",
     "static/media/telegram.svg": "./static/media/telegram.1edd80ed745c8fffe798a75b56e30322.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.4453edb75aebf8d605ad318f54bbe370.svg",
     "index.html": "./index.html",
-    "static/media/facebook.svg": "./static/media/facebook.545dc8f0419ef6036a41dc12e4c97299.svg",
-    "main.30a2a343.js.map": "./static/js/main.30a2a343.js.map"
+    "main.587f703a.js.map": "./static/js/main.587f703a.js.map"
   },
   "entrypoints": [
-    "static/js/main.30a2a343.js"
+    "static/js/main.587f703a.js"
   ]
 }
